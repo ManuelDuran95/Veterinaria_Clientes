@@ -1,0 +1,75 @@
+<app-navbar></app-navbar>
+<div class="contariner">
+    <button type="button" class="btn btn-danger"  (click)="authService.SignOut()">Cerrar Sesion</button>
+    <button type="button" class="btn btn-primary"  routerLink="/propietarios">Perfil Propietario</button>
+    <button type="button" class="btn btn-primary"  routerLink="/mascotas">Perfil de mi Mascota</button>
+<div class="row">
+   
+    <div class="col-9">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Lista de Citas</h4>
+                <h6 class="card-subtitle"></h6>
+                <div class="table-responsive">
+                    <div id="add-contact" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                     <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Agendar cita</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                 </div>
+                                            <div class="modal-body"> 
+                                                <form class="form-horizontal form-material">
+                                                    <div class="form-group">
+                                                        <div class="col-md-12 m-b-20">
+                                                            <input type="number" class="form-control" placeholder="Numero" name="Num" [(ngModel)]="Num"> </div>
+                                                        <div class="col-md-12 m-b-20">
+                                                            <input type="date" class="form-control" placeholder="Fecha" name="Fecha" [(ngModel)]="Fecha"> </div>
+                                                        <div class="col-md-12 m-b-20">
+                                                            <input type="time" class="form-control" placeholder="Hora" name="Hora" [(ngModel)]="Hora"> </div>
+                                                        <div class="col-md-12 m-b-20">
+                                                            <input type="text" class="form-control" placeholder="Motivo" name="Motivo" [(ngModel)]="Motivo" required> </div>
+                                                        <div class="col-md-12 m-b-20">
+                                                            <input type="text" class="form-control" placeholder="Estado" name="Estado" [(ngModel)]="Estado"> </div>
+                                                        <div class="col-md-12 m-b-20">
+                                                            <input type="text" class="form-control" placeholder="Mascota" name="Mascota" [(ngModel)]="Mascota"> </div>
+                                                        <div class="col-md-12 m-b-20">
+                                                            <input type="text" class="form-control" placeholder="DUI Propietario" name="Propietario" [(ngModel)]="Propietario"> </div>
+                                                        
+                                                            
+                            
+                                                    </div>
+                                                        
+                                                </form>
+                                             </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-info waves-effect" data-dismiss="modal" (click)="onSubmit()">Save</button>
+                                                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div> 
+                                    <!-- /.modal-dialog -->
+                                </div>
+                         
+                                <td colspan="2">
+                                    <button type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#add-contact">Agregar Nueva Cita</button>
+                                </td>
+                            
+                </div>
+            </div>
+        </div>
+        <!-- Column -->
+     
+        <!-- Column -->
+
+        <!-- Column -->
+
+        <!-- Column -->
+        
+    </div>
+</div>
+
+</div>
+<br><br><br><br><br>
+<app-footer></app-footer>
