@@ -46,7 +46,7 @@ SignIn(email, password) {
        window.alert(error.message)
     })
 }
-// Iniciar sesión usando Facebook
+
 
 
   // Regístrese con correo electrónico / contraseña
@@ -123,6 +123,7 @@ SignIn(email, password) {
       photoURL: user.photoURL,
       emailVerified: user.emailVerified
     }
+    let uemail=userData.email;
     return userRef.set(userData, {
       merge: true
     })

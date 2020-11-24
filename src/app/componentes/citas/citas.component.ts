@@ -21,6 +21,8 @@ export class CitasComponent implements OnInit {
   Mascota:string;
   Propietario:string;
   
+  //Estado="Sin verificar";
+
   constructor(
     public citaservice: CitaService,
     public authService: AuthService
@@ -35,7 +37,10 @@ export class CitasComponent implements OnInit {
           x["$key"] = element.key;
           this.citaList.push(x as Cita);
         });
+        this.Num = this.citaList.length + 1;
+        this.Estado='Sin verificar';
       });
+
   }
   onSubmit(){
     this.citaservice.insertdatos(this.Num,this.Fecha,this.Hora,this.Motivo,this.Estado,this.Mascota,this.Propietario);

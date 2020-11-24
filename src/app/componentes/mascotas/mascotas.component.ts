@@ -20,11 +20,15 @@ export class MascotasComponent implements OnInit {
   Color:string;
   Fecha_nacimiento:string;
   Nombre_propietario:string;
- 
+  uemail:string;
+  user:string[];
+  
 
   constructor(
     public mascotaservice: MascotaService
-  ) { }
+  ) {
+    
+   }
 
   ngOnInit(){
     return this.mascotaservice.getdatos()
@@ -37,6 +41,8 @@ export class MascotasComponent implements OnInit {
         });
         console.log(this.mascotaList);
       });
+      
+      
   }
 
   onSubmit(){
@@ -49,6 +55,8 @@ export class MascotasComponent implements OnInit {
       timer: 1500
     })
     this.resetForm();
+    
+    
   }
 resetForm() {
   this.Nombre_mascota ='';

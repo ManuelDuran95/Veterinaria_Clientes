@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-align-justify"></i> Mascotas
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Ingreso de Mascotas</h4>
+                    <h6 class="card-subtitle"></h6>
+                    <div class="table-responsive">
+                        <br>
+                        <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+                            <button type="button" class="btn btn-pill btn-primary" data-toggle="modal"
+                                data-target="#modalMascota">Agregar Mascota</button>
+                        </div>
+                        <div class="modal fade in" id="modalMascota" tabindex="-1" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-primary modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">Agregar Mascota</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control" placeholder="Nombre"
+                                                name="Nombre_mascota" [(ngModel)]="Nombre"> </div>
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control" placeholder="Talla" name="Especie"
+                                                [(ngModel)]="Talla"> </div>
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control" placeholder="Texto" name="Raza"
+                                                [(ngModel)]="Texto"> </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"
+                                            (click)="onSubmit()">Guardar</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cancelar</button>
+                                    </div>
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <br>
+                        <br>
+
+                    </div>
+                </div>
+               
+            </div>
+            <!-- Column -->
+
+            <!-- Column -->
+
+            <!-- Column -->
+
+            <!-- Column -->
+
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

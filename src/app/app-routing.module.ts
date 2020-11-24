@@ -11,6 +11,7 @@ import { SignUpComponent } from '././componentes/sign-up/sign-up.component';
 import { AuthGuard } from "./guard/auth.guard";
 import {PropietariosComponent} from './componentes/propietarios/propietarios.component';
 import {MascotasComponent} from './componentes/mascotas/mascotas.component';
+import{PruebasComponent} from './componentes/pruebas/pruebas.component';
 
 
 
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'propietarios', component: PropietariosComponent },
   { path: 'mascotas', component: MascotasComponent }
+ // { path: 'pruebas', component: PruebasComponent }
 
 ];
 

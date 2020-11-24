@@ -30,6 +30,7 @@ import { AuthGuard } from "./guard/auth.guard";
 import { FormsModule } from '@angular/forms';
 import { PropietariosComponent } from './componentes/propietarios/propietarios.component';
 import { MascotasComponent } from './componentes/mascotas/mascotas.component';
+import { PruebasComponent } from './componentes/pruebas/pruebas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +45,8 @@ import { MascotasComponent } from './componentes/mascotas/mascotas.component';
     VerifyEmailComponent,
     CitasComponent,
     PropietariosComponent,
-    MascotasComponent
+    MascotasComponent,
+    PruebasComponent
   ],
   imports: [
     BrowserModule,

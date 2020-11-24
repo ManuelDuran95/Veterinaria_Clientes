@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {AngularFireDatabase, AngularFireList} from '@angular/fire/database';
+import Swal from 'sweetalert2';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,14 @@ export class CitaService {
       Mascota:mascota,
       Propietario:propietario
        });
+       Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Mascota Ingresada', 
+        showConfirmButton: false,
+        timer: 1500
+      })
+
       }
       deleteCita($key: string) {
         this.citaList.remove($key);
